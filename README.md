@@ -25,3 +25,9 @@ yql/fetchComments
 
 This sample explains how you can use the html table from YQL to parse pages in Dart.
 
+License
+================
+
+The source code and schematics are released under "THE BEER-WARE" licence.
+
+I would, however, consider it a great courtesy if you could email me and tell me about your project and how this code was used, just for my own continued personal gratification :)'w'
