@@ -1,5 +1,6 @@
 /**
  * Code sample to use YQL from Dart
+ * This explains how you can use the YQL html table 
  *
  * @author: Sudar (http://sudarmuthu.com/)
  * 
@@ -16,7 +17,7 @@
 #import("EncodeDecode.dart");
 
 // the main class
-class yql {
+class fetchComments {
 
   InputElement _url = null;
   ButtonElement _check = null;
@@ -24,7 +25,7 @@ class yql {
   Element _count = null;
   
   // constructor
-  yql() {
+  fetchComments() {
     _url = document.query('#url');
     _check = document.query('#check');
     
@@ -39,7 +40,7 @@ class yql {
     _check.on.click.add(_(Event clickEvent) {
       
       if (_url.value != '') {
-        // make a YQL request
+        // make a fetchComments request
         XMLHttpRequest request = new XMLHttpRequest();
 
         String baseurl = "http://query.yahooapis.com/v1/public/yql?format=json&q=";
@@ -67,5 +68,5 @@ class yql {
 
 // the main function
 void main() {
-  new yql().run();
+  new fetchComments().run();
 }
